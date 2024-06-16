@@ -11,7 +11,7 @@ import { Contact } from "../../components/contact";
 export default function Home(){
     const [name,setName] = useState("");
  return(
- <View>
+ <View style={styles.container}>
     <View style={styles.header}>
      <Input style={styles.input}>
       <Feather name="search" size={16} color={theme.colors.gray_300}/>
@@ -28,7 +28,9 @@ export default function Home(){
 
     </View>
 
-    <Contact/>
+    <Contact contact={{
+      name:"Nattan", 
+      image: require("../../assets/images/image-me.jpeg") }} />
  </View>
 )
 }

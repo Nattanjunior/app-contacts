@@ -1,10 +1,10 @@
-import {StyleSheet } from 'react-native'
-import { Header } from 'react-native/Libraries/NewAppScreen'
+import { StyleSheet } from 'react-native'
 import { theme } from '../../theme'
 
 export const styles = StyleSheet.create({
     container:{
      flex: 1, 
+     backgroundColor: theme.colors.gray_200
     },
     header:{
       width: "100%",
